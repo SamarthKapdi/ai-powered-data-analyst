@@ -9,23 +9,25 @@ Unlike simple wrappers around an LLM chat prompt, InsightFlow AI executes **dete
 ## Table of Contents
 
 1. [Key Features](#key-features)
-2. [Architecture & Data Flow](#architecture--data-flow)
-3. [Technology Stack & Rationale](#technology-stack--rationale)
-4. [Quick Start (Local Setup)](#quick-start-local-setup)
-5. [Docker Setup](#docker-setup)
-6. [LLM Configuration (Google Gemini)](#llm-configuration-google-gemini)
-7. [Sample Datasets & Ground Truth](#sample-datasets--ground-truth)
-8. [Example Questions to Try](#example-questions-to-try)
-9. [How It Works](#how-it-works)
+2. [Application Demo Video & Screenshots](#application-demo-video--screenshots)
+3. [Architecture & Data Flow](#architecture--data-flow)
+4. [Technology Stack & Rationale](#technology-stack--rationale)
+5. [Quick Start (Local Setup)](#quick-start-local-setup)
+6. [Docker Setup](#docker-setup)
+7. [LLM Configuration (Google Gemini)](#llm-configuration-google-gemini)
+8. [Sample Datasets & Ground Truth](#sample-datasets--ground-truth)
+9. [Example Questions to Try](#example-questions-to-try)
+10. [How It Works](#how-it-works)
    - [Deterministic Computation](#deterministic-computation)
    - [Anomaly Detection](#anomaly-detection)
    - [Interactive Visualizations](#interactive-visualizations)
    - [Safe Code Generation](#safe-code-generation)
    - [Conversation Memory](#conversation-memory)
    - [Multi-File Analysis](#multi-file-analysis)
-10. [Automated Test Suite](#automated-test-suite)
-11. [Deployment Guide](#deployment-guide)
-12. [Assumptions & Limitations](#assumptions--limitations)
+11. [Automated Test Suite](#automated-test-suite)
+12. [Deployment Guide](#deployment-guide)
+13. [GitHub Submission Instructions](#github-submission-instructions)
+14. [Assumptions & Limitations](#assumptions--limitations)
 
 ---
 
@@ -44,7 +46,16 @@ Unlike simple wrappers around an LLM chat prompt, InsightFlow AI executes **dete
 
 ---
 
-## Application Screenshots
+## Application Demo Video & Screenshots
+
+### 🎬 Live Demo Screen Recording
+A genuine 15.3-second screen recording showing CSV upload, data preview, natural-language query answering, dynamic chart rendering, generated code copy, statistical anomaly detection, and automated KPI insights:
+
+- **Local Video Path**: [`docs/demo/insightflow-demo.mp4`](docs/demo/insightflow-demo.mp4) (15.3s, 1280×720 HD, 1.28 MB)
+
+---
+
+### Application Screenshots
 
 ### 1. Natural Language Data Analysis & Visualizations
 Chat interface displaying verified calculations, dynamic chart rendering, generated SQL & Pandas code, and statistical anomaly detection.
@@ -353,6 +364,26 @@ docker compose up -d --build
 ### Option 2: Render / Railway / Fly.io
 - **Backend**: Deploy `backend/` as a Python web service running `python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
 - **Frontend**: Deploy `frontend/` as a Static Site with build command `npm run build` and publish directory `dist`. Configure `VITE_API_URL` to point to the backend URL.
+
+---
+
+## GitHub Submission Instructions
+
+To push this repository to GitHub under the designated repository name `ai-powered-data-analyst`:
+
+```bash
+# 1. Open terminal in the project directory
+cd "d:\AllProjects\Digital Back Office assignment"
+
+# 2. Add your GitHub remote repository (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/ai-powered-data-analyst.git
+
+# 3. Rename branch to main if desired
+git branch -M main
+
+# 4. Push verified commits and tags
+git push -u origin main
+```
 
 ---
 
